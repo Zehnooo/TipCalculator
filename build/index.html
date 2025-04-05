@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }</style>
+    <link rel='stylesheet' href="/stylesheets/main.css">
+</head>
+<body>
+    <main><h1 id="page-title">Return Random Character</h1></main>
+    <input type="text" onkeypress="return onlyLetters(event)" id="fname" placeholder="Your Name">
+    <input type="button" value="Submit" id="submit-btn">
+
+    <span class="charResult"><p id="randChar"></p></span>
+
+    <hr>
+
+    <input type="number" id="subtotal" placeholder="ENTER ORDER SUBTOTAL" min="0.01">
+
+<button id="ten-per" onclick"><div class="percent">10%</div></button>
+<button id="fifteen-per"><div class="percent">15%</div></button>
+<button id="twenty-per"><div class="percent">20%</div></button>
+<button id="custom-per">Custom Tip</button>
+
+<div><output id="tip-amount">0%</output></div>
+<div><output id="total">0.00</output></div>
+
+<div id="custom-per-input">
+    <input type='number' placeholder="Enter your desired tip amount" min="0.01">
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
