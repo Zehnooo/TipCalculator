@@ -37,6 +37,9 @@ if(num === '' || num < 0 || num === -0){
 		document.getElementById("tip-amount").textContent = ("TOTAL TIP AMOUNT = " + tipTotal);
 
 		document.getElementById("total").textContent = (" TOTAL BILL AMOUNT = " + totalAmou);
+
+		document.getElementById('tip-amount').style.display = "block";
+		document.getElementById('total').style.display = "block";
 	});
 
 
@@ -59,6 +62,9 @@ if(num === '' || num < 0 || num === -0){
 				document.getElementById("tip-amount").textContent = ("TOTAL TIP AMOUNT = " + tipTotal);
 		
 				document.getElementById("total").textContent = (" TOTAL BILL AMOUNT = " + totalAmou);
+
+				document.getElementById('tip-amount').style.display = "block";
+		document.getElementById('total').style.display = "block";
 		
 	});
 
@@ -82,6 +88,8 @@ document.getElementById("twenty-per").addEventListener ("click",function (){
 	
 			document.getElementById("total").textContent = (" TOTAL BILL AMOUNT = " + totalAmou);
 	
+			document.getElementById('tip-amount').style.display = "block";
+		document.getElementById('total').style.display = "block";
 });
 
 document.getElementById('custom-per').addEventListener("click", function(){
@@ -94,5 +102,7 @@ document.getElementById('custom-per').addEventListener("click", function(){
 		}
 		let subNum = parseInt(num, 10);
 		document.getElementById('custom-per-input').style.display = "block";
+		document.getElementById('tip-amount').style.display = "block";
+		document.getElementById('total').style.display = "block";
 		
 })
