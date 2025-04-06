@@ -14,7 +14,7 @@ body:not(header) {
     font-family: sans-serif;
     background-repeat: no-repeat;
     background-size:cover;
-    background-image: url('/build/assets/Forever\ Lost.jpg');
+    background-image: url("/build/assets/Forever Lost.jpg");
     align-content: center;
 }
 

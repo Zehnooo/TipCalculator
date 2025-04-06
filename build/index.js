@@ -3,20 +3,6 @@ function onlyLetters(event) {
   return ((key >= 65 && key <= 90) || key == 8 || key == 32);
 }
 
-document.getElementById("submit-btn").addEventListener("click", function () {
-	const name = document.getElementById("fname").value;
-	if (!name) alert("Please enter a name"); 
-
-	const randIndex = Math.floor(Math.random() * name.length);
-	const randChar = name[randIndex];
-
-	console.log(randChar);
-	
-	document.getElementById("randChar").textContent = ("YOUR RANDOM CHARACTER IS: " + randChar);
-
-	document.getElementById("page-title").textContent = "GET WRECKED";
-});
-
 let num = document.getElementById("subtotal");
 
 // 10 percent tip //
@@ -120,7 +106,12 @@ document.getElementById('apply-custom').addEventListener("click", function(){
 	let subNum = parseInt(num, 10);
 	let customInput = parseInt(document.getElementById('customTipAmou').value, 10);
 
-	if (customInput === 10 || customInput === 15 || customInput === 20){
+	if (isNaN(customInput) || customInput <= 0) {
+		alert("Tip percentage must be a positive number.");
+		return;
+	}
+
+	if ([10, 15, 20].includes(customInput)){
 	alert("Easter Egg found :) Why did you even choose custom tip?");
 	
 	document.getElementById('tip-amount').style.display = "none";
