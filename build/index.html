@@ -11,28 +11,58 @@
     <link rel='stylesheet' href="/stylesheets/main.css">
 </head>
 <body>
-    <main><h1 id="page-title">Return Random Character</h1></main>
-    <input type="text" onkeypress="return onlyLetters(event)" id="fname" placeholder="Your Name">
-    <input type="button" value="Submit" id="submit-btn">
-
-    <span class="charResult"><p id="randChar"></p></span>
-
+    <header>Made by Zehno 2025</header>
     <hr>
-
-    <input type="number" id="subtotal" placeholder="ENTER ORDER SUBTOTAL" min="0.01">
-
-<button id="ten-per" onclick"><div class="percent">10%</div></button>
+    <div class="calc-wrapper">
+        <div class="calc-header">
+            <h1>Tip Calculator</h1>
+            <hr>
+        </div>
+    <div class="subtotal-container">
+    <input type="number" id="subtotal" placeholder="ENTER SUBTOTAL" min="0.01">
+    </div>
+<div class="percent-buttons">
+    <div class="button-holder">
+<button id="ten-per"><div class="percent">10%</div></button>
+</div>
+<div class="button-holder">
 <button id="fifteen-per"><div class="percent">15%</div></button>
+</div>
+<div class="button-holder">
 <button id="twenty-per"><div class="percent">20%</div></button>
-<button id="custom-per">Custom Tip</button>
-
-<div><output id="tip-amount">0%</output></div>
-<div><output id="total">0.00</output></div>
-
-<div id="custom-per-input">
-    <input type='number' placeholder="Enter your desired tip amount" min="0.01">
+</div>
 </div>
 
+<div class="custom-tip-container">
+    <div class="button-holder">
+<button id="custom-per">Custom Tip</button>
+</div> 
+<div id="custom-per-input">
+   <div class="button-holder">
+    <input type='number' placeholder="Enter tip % (whole number)" id="customTipAmou" min="0.01">
+</div>
+   <div class="button-holder">
+    <button id="apply-custom">Apply Custom Tip</button>
+
+</div>
+</div>
+</div>
+<div class="tip-info-container">
+<div><output id="tip-amount">0%</output></div>
+<div><output id="total">0.00</output></div>
+</div>
+
+
+
+<div id="clear-buttons">
+    <div class="button-holder">
+    <button id="clear-tip">Clear Tip %</button>
+</div>
+<div class="button-holder">
+    <button id="clear-calc">Clear All</button>
+</div>
+</div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
