@@ -136,6 +136,7 @@ button:hover {
 .calc-header h1 {
     text-align: center;
     padding:15px;
+    letter-spacing: 3px;
 }
 hr {
     height: 12px;
