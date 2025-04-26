@@ -2,7 +2,7 @@
 
 Responsive tip calculator built with html, css, and javascript
 
-- Quickly calculate tip 
+- Quickly calculate tips
 - Features light/dark mode toggle
 - Responsive on all mobile devices
 - Background gradient animations
